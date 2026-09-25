@@ -277,6 +277,14 @@
   }
   .proj-index{ font-family:'JetBrains Mono', monospace; font-size:0.76rem; color:var(--text-3); margin-bottom:14px; }
   .proj-card h3{ font-size:1.32rem; margin-bottom:6px; }
+  .project-github{
+    position:absolute; top:28px; right:28px;
+    width:34px; height:34px; display:flex; align-items:center; justify-content:center;
+    color:var(--text-3); border:1px solid var(--border-soft); border-radius:8px;
+    transition:color .18s ease, border-color .18s ease, transform .18s ease;
+  }
+  .project-github:hover{ color:var(--gold); border-color:var(--gold); transform:translateY(-1px); }
+  .project-github svg{ width:18px; height:18px; fill:currentColor; }
   .proj-card .tag-line{ font-family:'JetBrains Mono', monospace; font-size:0.76rem; color:var(--gold); margin-bottom:16px; }
   .proj-card p.desc{ color:var(--text-2); margin:0 0 16px; flex-grow:0; }
   .proj-card ul{ color:var(--text-2); padding-left:18px; margin:0 0 18px; }
@@ -470,7 +478,7 @@
             <li>Built and shipped an internal <strong>multimodal RAG chatbot</strong> (text + image retrieval) over the company's technical documentation, integrated into the production RAG platform.</li>
             <li>Built a <strong>RAG evaluation harness</strong> from scratch — eval dataset, Groq-based LLM-as-judge scoring, automated metrics pipeline — and used it to validate a source-priority reranking system.</li>
             <li>Designed end-to-end <strong>AI workflow automations in n8n</strong>, connecting LLMs, REST APIs, and autonomous agents to replace manual business processes.</li>
-            <li>Built a <strong>voice AI agent with ElevenLabs</strong> and led applied R&amp;D across RAG, agentic, and automation prototypes, taking products from concept to internal deployment.</li>
+            <li>Built a <strong>voice AI agent with ElevenLabs</strong> and led applied R&amp;D across RAG, agentic, and automation prototypes, taking 3+ products from concept to internal deployment.</li>
           </ul>
         </div>
         <div class="tl-item">
@@ -552,6 +560,7 @@
           <div class="proj-index">01 / 05</div>
           <div class="tag-line">python · langgraph · fastapi · next.js · qdrant · postgresql · sqlalchemy · jwt auth · groq · whisper · docker</div>
           <h3>ResolveAI</h3>
+          <a class="project-github" href="https://github.com/AaimaFarrukh/Resolve_ai" target="_blank" rel="noopener noreferrer" aria-label="View ResolveAI on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.13 3.17.76.84 1.22 1.91 1.22 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .7z"/></svg></a>
           <p class="desc">A multimodal, agentic customer-support platform that handles text, voice, and images alongside conversation history, order data, and product policy knowledge.</p>
           <ul>
             <li>Designed a <strong>LangGraph agent</strong> with dynamic tool calling, structured outputs, and confidence-based routing to human escalation.</li>
@@ -565,6 +574,7 @@
           <div class="proj-index">02 / 05</div>
           <div class="tag-line">python · fastapi · next.js · whisper · langchain · mistral ai · chromadb</div>
           <h3>MeetMind AI</h3>
+          <a class="project-github" href="https://github.com/AaimaFarrukh/MeetMind-AI" target="_blank" rel="noopener noreferrer" aria-label="View MeetMind AI on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.13 3.17.76.84 1.22 1.91 1.22 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .7z"/></svg></a>
           <p class="desc">An AI meeting assistant that transcribes audio, video, and YouTube recordings and generates summaries, action items, and key decisions, with a RAG-based Q&amp;A layer over meeting content.</p>
           <div class="stack-row"><span class="stack-chip">Transcription</span><span class="stack-chip">Summarization</span><span class="stack-chip">RAG Q&amp;A</span></div>
         </article>
@@ -572,6 +582,7 @@
           <div class="proj-index">03 / 05</div>
           <div class="tag-line">python · multi-agent ai · usa jobs api · groq · streamlit</div>
           <h3>Job Hunt Assistant</h3>
+          <a class="project-github" href="https://github.com/AaimaFarrukh/Job_Hunt_Assistant" target="_blank" rel="noopener noreferrer" aria-label="View Job Hunt Assistant on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.13 3.17.76.84 1.22 1.91 1.22 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .7z"/></svg></a>
           <p class="desc">A multi-agent AI job-search assistant that orchestrates specialized agents to discover and process job listings through the USAJobs API, with a Streamlit interface for interacting with the workflow.</p>
           <div class="stack-row">
             <span class="stack-chip">Multi-agent workflow</span>
@@ -583,6 +594,7 @@
           <div class="proj-index">04 / 05</div>
           <div class="tag-line">python · nlp · scikit-learn · streamlit · tmdb api</div>
           <h3>CineMatch</h3>
+          <a class="project-github" href="https://github.com/AaimaFarrukh/CineMatch-Movie_Recommender_System" target="_blank" rel="noopener noreferrer" aria-label="View CineMatch on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.13 3.17.76.84 1.22 1.91 1.22 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .7z"/></svg></a>
           <p class="desc">A hybrid recommendation and sentiment-intelligence engine using TF-IDF, cosine similarity, and sentiment-aware ranking, with a Naive Bayes classifier reaching 97.4% accuracy and a 0.96 F1-score, deployed via Streamlit.</p>
           <div class="stack-row"><span class="stack-chip">TF-IDF</span><span class="stack-chip">Naive Bayes</span><span class="stack-chip">Sentiment analysis</span></div>
         </article>
@@ -590,6 +602,7 @@
           <div class="proj-index">05 / 05</div>
           <div class="tag-line">javascript · chrome extensions · fastapi · groq · llama · ai automation</div>
           <h3>FlowMind AI</h3>
+          <a class="project-github" href="https://github.com/AaimaFarrukh/FlowMind_AI" target="_blank" rel="noopener noreferrer" aria-label="View FlowMind AI on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.13 3.17.76.84 1.22 1.91 1.22 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .7z"/></svg></a>
           <p class="desc">An AI-powered Chrome extension that turns selected text into actionable insights, with a FastAPI backend and LLM-powered tools for summarizing, translating, simplifying, explaining, and extracting key points.</p>
           <div class="stack-row">
             <span class="stack-chip">Chrome Extension</span>
